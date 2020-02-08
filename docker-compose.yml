@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  sample:
+    container_name: directory-app-client
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '7100:3000'
+    environment:
+      - NODE_ENV=development
