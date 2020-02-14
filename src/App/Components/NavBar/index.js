@@ -5,13 +5,13 @@ import NavLinks from './NavLinks'
 
 const Navbar = styled.nav`
   width: 100%;
-  background: #d81159;
+  background: ${(props) => props.theme.primaryColor};
   height: 7.5rem;
 `
 
 const WrapperContainer = styled.div`
   display: grid;
-  max-width: 120rem;
+  max-width: 114rem;
   margin: auto;
   grid-template-columns: repeat(2, 1fr);
 `
