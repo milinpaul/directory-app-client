@@ -25,24 +25,11 @@ class HomeContainer extends React.Component {
           <Grid item xs={12} sm={12}>
             <PrimaryHeading>List Of Users</PrimaryHeading>
           </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
-          <Grid item xs={6} sm={3}>
-            <ListingCard />
-          </Grid>
+          <ListingCard />
+          <ListingCard />
+          <ListingCard />
+          <ListingCard />
+          <ListingCard />
         </Grid>
         {/* <RenderListWithLoader isLoading={loading} data={data} /> */}
       </>

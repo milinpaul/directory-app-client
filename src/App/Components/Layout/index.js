@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Header from './Header'
+import NavBar from '../NavBar'
 
 const ContentWrapper = styled.div`
   overflow: hidden;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 `
 const index = ({ children }) => {
   return (
     <>
-      <Header />
+      <NavBar />
       <ContentWrapper>{children}</ContentWrapper>
     </>
   )
