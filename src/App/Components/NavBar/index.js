@@ -11,9 +11,13 @@ const Navbar = styled.nav`
 
 const WrapperContainer = styled.div`
   display: grid;
-  max-width: 114rem;
+  max-width: 70%;
   margin: auto;
+
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 7.5rem; */
+  height: 100%;
+  align-items: center;
 `
 
 const Index = () => {
