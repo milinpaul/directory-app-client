@@ -5,6 +5,7 @@ const Card = styled.div`
   height: 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
 `
 
 const CardMedia = styled.div`

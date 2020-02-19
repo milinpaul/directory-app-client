@@ -1,3 +1,5 @@
 export default {
-  primaryColor: '#d81159'
+  primaryColor: '#d81159',
+  primaryTextColor: '#444C56',
+  secondaryTextColor: '#555F6B'
 }
