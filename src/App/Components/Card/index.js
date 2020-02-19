@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import FavoriteIcon from '../Icons/FavoriteIcon'
 import Rating from '../Rating'
 
@@ -14,10 +16,10 @@ import {
   RatingWrapper
 } from './Styles'
 
-const index = () => {
+const index = ({ cardImage }) => {
   return (
     <Card>
-      <CardMedia cardImage='https://listify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2016/05/thegoodson-11.jpg'>
+      <CardMedia cardImage={cardImage}>
         <FavoriteIconWrapper>
           <IconOverlay>
             <FavoriteIcon />
@@ -37,6 +39,14 @@ const index = () => {
       </RatingWrapper>
     </Card>
   )
+}
+
+index.defaultProps = {
+  cardImage: ''
+}
+
+index.propTypes = {
+  cardImage: PropTypes.string
 }
 
 export default index

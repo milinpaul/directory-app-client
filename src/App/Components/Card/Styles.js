@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
-  width: 30rem;
+  width: 40rem;
   height: 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
@@ -61,6 +61,12 @@ const IconOverlay = styled.div`
   border-radius: 50%;
   background-color: rgba(128, 128, 128, 0.3);
   display: inline-flex;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
 `
 
 const RatingWrapper = styled.div`
