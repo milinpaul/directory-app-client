@@ -1,8 +1,14 @@
 import React from 'react'
 import HeroSection from './HeroSection'
+import ListingSection from './ListingSection'
 
 const LandingContainer = () => {
-  return <HeroSection />
+  return (
+    <>
+      <HeroSection />
+      <ListingSection />
+    </>
+  )
 }
 
 export default LandingContainer

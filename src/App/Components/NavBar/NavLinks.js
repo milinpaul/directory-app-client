@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navlinks = styled.ul`
   display: flex;
-  list-style: none;
-  justify-self: end;
   @media only screen and (max-width: 720px) {
-    /* flex-direction: column; */
     display: none;
   }
 `
