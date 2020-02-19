@@ -27,6 +27,9 @@ const CardContainer = styled.div`
   @media only screen and (max-width: 812px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
 
 const ListingSection = () => {
