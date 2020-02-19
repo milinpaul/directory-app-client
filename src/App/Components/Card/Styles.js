@@ -6,6 +6,13 @@ const Card = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
+
+  @media only screen and (max-width: 375px) {
+    width: 32rem;
+  }
+  @media only screen and (max-width: 812px) {
+    width: 32rem;
+  }
 `
 
 const CardMedia = styled.div`

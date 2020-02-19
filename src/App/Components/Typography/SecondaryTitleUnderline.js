@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export default styled.h2`
+export default styled.h3`
   align-self: center;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: ${(props) => props.theme.primaryTextColor};
-  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: ${(props) => props.theme.secondaryTextColor};
   text-transform: capitalize;
+  letter-spacing: 0.125rem;
   position: relative;
 
   &::after {
@@ -24,9 +24,5 @@ export default styled.h2`
 
   &:hover::after {
     width: 80%;
-  }
-
-  @media only screen and (max-width: 375px) {
-    font-size: 1.6rem;
   }
 `
