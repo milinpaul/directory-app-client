@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Card = styled.div`
   width: 30rem;
   height: 30rem;
-  /* border: 1px solid crimson; */
   border-radius: 0.5rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 `
@@ -23,7 +22,6 @@ const CardInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30% 2rem 0 2rem;
-  /* padding: 0 2rem; */
 `
 
 const CardTitle = styled.h4`
@@ -33,8 +31,6 @@ const CardTitle = styled.h4`
 `
 
 const CardAddress = styled.h5`
-  /* padding: 0.5rem 0;
-  padding-right: 0.5rem; */
   font-size: 1.4rem;
   font-weight: 300;
   padding-bottom: 0.5rem;
