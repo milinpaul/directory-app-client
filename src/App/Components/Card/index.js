@@ -1,5 +1,6 @@
 import React from 'react'
 import FavoriteIcon from '../Icons/FavoriteIcon'
+import Rating from '../Rating'
 
 import {
   Card,
@@ -9,7 +10,8 @@ import {
   CardInfoWrapper,
   CardTitle,
   CardAddress,
-  CardPhone
+  CardPhone,
+  RatingWrapper
 } from './Styles'
 
 const index = () => {
@@ -30,6 +32,9 @@ const index = () => {
           </CardPhone>
         </CardInfoWrapper>
       </CardMedia>
+      <RatingWrapper>
+        <Rating />
+      </RatingWrapper>
     </Card>
   )
 }

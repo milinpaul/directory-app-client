@@ -15,6 +15,8 @@ const StyledLink = styled(Link)`
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s;
+
   &:hover {
     background: #8f2d56;
   }

@@ -63,6 +63,10 @@ const IconOverlay = styled.div`
   display: inline-flex;
 `
 
+const RatingWrapper = styled.div`
+  padding: 2rem 3rem;
+`
+
 export {
   Card,
   CardMedia,
@@ -71,5 +75,6 @@ export {
   CardAddress,
   CardPhone,
   FavoriteIconWrapper,
-  IconOverlay
+  IconOverlay,
+  RatingWrapper
 }
