@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from './HeroSection'
 import ListingSection from './ListingSection'
 import CategoryTileBlock from './CategoryTileBlock'
+import FeatureSection from './FeatureSection'
 
 const LandingContainer = () => {
   return (
@@ -9,6 +10,7 @@ const LandingContainer = () => {
       <HeroSection />
       <CategoryTileBlock />
       <ListingSection />
+      <FeatureSection />
     </>
   )
 }
