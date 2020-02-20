@@ -7,8 +7,8 @@ const LandingContainer = () => {
   return (
     <>
       <HeroSection />
-      <ListingSection />
       <CategoryTileBlock />
+      <ListingSection />
     </>
   )
 }

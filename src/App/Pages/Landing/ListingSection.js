@@ -6,6 +6,8 @@ import Card from '../../Components/Card'
 import { PrimaryHeadingUnderline } from '../../Components/Typography'
 
 const Wrapper = styled.div`
+  max-width: 85%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -19,7 +21,7 @@ const CardContainer = styled.div`
   grid-column-gap: 3rem;
   justify-items: center;
   grid-auto-flow: row;
-  padding-top: 6rem;
+  padding: 6rem 0;
 
   @media only screen and (max-width: 720px) {
     grid-template-columns: repeat(1, 1fr);
