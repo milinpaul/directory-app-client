@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import StyledSection from '../../Components/Section'
 import ImageCard from '../../Components/ImageCard'
-import { PrimaryTitle, SecondaryTitle, SecondaryTitleUnderline } from '../../Components/Typography'
+import { PrimaryTitle, SecondaryTitleUnderline } from '../../Components/Typography'
 
 const WrapperContainer = styled.div`
   max-width: 85%;
