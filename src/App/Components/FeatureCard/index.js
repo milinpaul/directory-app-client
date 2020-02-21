@@ -7,11 +7,20 @@ const FeatureCard = styled.div`
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 3rem 2rem;
+
+  @media only screen and (max-width: 375px) {
+    width: 30rem;
+  }
 `
 
 const FeatureIcon = styled.img`
   height: 40%;
+
+  @media only screen and (max-width: 375px) {
+    height: 30%;
+  }
 `
 const FeatureTitle = styled.h3`
   font-size: 2rem;

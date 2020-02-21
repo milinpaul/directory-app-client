@@ -11,7 +11,16 @@ const FeatureCardWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
+  align-items: center;
+  justify-content: space-around;
   padding: 8rem 5rem;
+
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+  @media only screen and (max-width: 812px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const FeatureSection = () => {
