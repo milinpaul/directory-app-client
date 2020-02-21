@@ -4,19 +4,7 @@ import styled from 'styled-components'
 import StyledSection from '../../Components/Section'
 import Card from '../../Components/Card'
 import { PrimaryHeadingUnderline } from '../../Components/Typography'
-
-const Wrapper = styled.div`
-  max-width: 85%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  @media only screen and (max-width: 375px) {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 100%;
-  }
-`
+import Wrapper from '../../Components/Wrapper'
 
 const CardContainer = styled.div`
   display: grid;
@@ -35,6 +23,10 @@ const CardContainer = styled.div`
   }
   @media only screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
   }
 `
 

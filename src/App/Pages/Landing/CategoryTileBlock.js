@@ -4,18 +4,7 @@ import styled from 'styled-components'
 import StyledSection from '../../Components/Section'
 import ImageCard from '../../Components/ImageCard'
 import { PrimaryTitle, SecondaryTitleUnderline } from '../../Components/Typography'
-
-const WrapperContainer = styled.div`
-  max-width: 85%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-
-  h2 {
-    padding-bottom: 2rem;
-  }
-`
+import Wrapper from '../../Components/Wrapper'
 
 const ImageCardContainer = styled.div`
   display: grid;
@@ -34,7 +23,7 @@ const ImageCardContainer = styled.div`
 const CategoryTileBlock = () => {
   return (
     <StyledSection backgroundColor='#f8f7f5'>
-      <WrapperContainer>
+      <Wrapper>
         <PrimaryTitle>What Do You Want to Do Tonight?</PrimaryTitle>
         <SecondaryTitleUnderline>
           Discover & connect with great local businesses in Toronto.
@@ -53,7 +42,7 @@ const CategoryTileBlock = () => {
             Lodging
           </ImageCard>
         </ImageCardContainer>
-      </WrapperContainer>
+      </Wrapper>
     </StyledSection>
   )
 }
