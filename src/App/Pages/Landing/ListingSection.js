@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+  }
 `
 
 const CardContainer = styled.div`
@@ -20,7 +25,6 @@ const CardContainer = styled.div`
   grid-row-gap: 6rem;
   grid-column-gap: 3rem;
   justify-items: center;
-  grid-auto-flow: row;
   padding: 6rem 0;
 
   @media only screen and (max-width: 720px) {

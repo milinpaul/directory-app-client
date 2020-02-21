@@ -24,6 +24,7 @@ const ImageText = styled.h3`
   color: #fff;
   font-size: 3rem;
   font-weight: 300;
+  text-align: center;
 `
 
 const index = ({ media, children }) => {
