@@ -8,9 +8,9 @@ export default styled.button`
   padding: 1rem 5rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  transition: all 0.2s;
-
+  &:active,
   &:hover {
+    outline: none;
     background-color: #b40e4a;
   }
 

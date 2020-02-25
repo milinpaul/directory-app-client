@@ -11,7 +11,9 @@ export default styled.input`
   border-radius: 0.4rem;
   transition: all 0.2s;
 
+  &:active,
   &:focus {
+    outline: none;
     border: 0.1rem solid #b40e4a;
   }
 
