@@ -8,7 +8,7 @@ const FooterSection = styled.footer`
   max-width: 75%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: center;
   justify-items: center;
   color: #fff;
@@ -24,9 +24,15 @@ const LogoWidget = styled.div`
   justify-self: center;
 `
 const LinksWidget = styled.div`
-  /* al */
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `
-const CompanyWidget = styled.div``
+const CompanyWidget = styled.div`
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
+`
 
 const Links = styled.ul`
   li {
@@ -53,6 +59,7 @@ const StyledLink = styled(Link)`
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.2s;
 
   &:hover {
     opacity: 0.8;
