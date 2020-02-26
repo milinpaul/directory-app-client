@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Wrapper from '../../Components/Wrapper'
 import { PrimaryTitle, SecondaryTitle } from '../../Components/Typography'
 import { StyledButton } from '../../Components/Buttons'
 
@@ -14,6 +13,20 @@ const CTAContainer = styled.div`
   padding: 10rem;
   justify-items: center;
   align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
+  @media only screen and (max-width: 812px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem;
+
+    h2,
+    h3 {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
 `
 
 const CTABtnWrapper = styled.div`
