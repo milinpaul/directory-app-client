@@ -5,6 +5,7 @@ import CategoryTileBlock from './CategoryTileBlock'
 import FeatureSection from './FeatureSection'
 import FullWidthBlock from './FullWidthBlock'
 import PricingTableSection from './PricingTableSection'
+import CallToActionBlock from './CallToActionBlock'
 
 const LandingContainer = () => {
   return (
@@ -15,6 +16,7 @@ const LandingContainer = () => {
       <FeatureSection />
       <FullWidthBlock />
       <PricingTableSection />
+      <CallToActionBlock />
     </>
   )
 }

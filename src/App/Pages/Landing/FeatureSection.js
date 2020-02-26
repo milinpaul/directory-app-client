@@ -8,8 +8,9 @@ import Wrapper from '../../Components/Wrapper'
 
 const FeatureCardWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
   justify-items: center;
   align-items: center;
   justify-content: space-around;

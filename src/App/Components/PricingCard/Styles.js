@@ -8,6 +8,10 @@ const PricingCard = styled.div`
   &:hover {
     background-color: #f8f7f5;
   }
+
+  @media only screen and (max-width: 375px) {
+    width: 30rem;
+  }
 `
 
 const PricingInfo = styled.div`

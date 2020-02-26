@@ -7,11 +7,13 @@ import Wrapper from '../../Components/Wrapper'
 
 const PricingTableContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
   align-items: center;
   justify-content: space-around;
   grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
   margin: 3rem 3rem;
 `
 
@@ -33,27 +35,15 @@ const PricingTableSection = () => {
             ]}
           />
           <PricingCard
-            planName='Basic'
-            price='$6.99'
+            planName='Premium'
+            price='$12.99'
             features={[
-              { name: 'Basic Listing Submission' },
+              { name: 'One Time Fee for One Listing' },
               { name: 'One Listing' },
-              { name: '30 Days Availability' },
-              { name: 'Limited Support' },
-              { name: 'Accept Reviews' },
-              { name: 'Edit Your Listing' }
-            ]}
-          />
-          <PricingCard
-            planName='Basic'
-            price='$6.99'
-            features={[
-              { name: 'Basic Listing Submission' },
-              { name: 'One Listing' },
-              { name: '30 Days Availability' },
-              { name: 'Limited Support' },
-              { name: 'Accept Reviews' },
-              { name: 'Edit Your Listing' }
+              { name: 'Unlimited Availability' },
+              { name: 'Featured In the Results' },
+              { name: 'Post Deals & Promotions' },
+              { name: '24/7 Service & Support' }
             ]}
           />
         </PricingTableContainer>
