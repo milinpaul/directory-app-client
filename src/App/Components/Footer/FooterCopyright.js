@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const CopyrightFooterWrapper = styled.div`
-  /* height: 30rem; */
   padding: 3rem 0;
   background-color: #b40e4a;
 `
@@ -25,8 +25,24 @@ const CopyrightText = styled.h4`
 
 const SocialIconsWrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-items: center;
 `
-const Icon = styled.div``
+const StyledLink = styled(Link)`
+  cursor: pointer;
+  transition: all 0.2s;
+
+  ion-icon {
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: #fff;
+
+    &:hover {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+  }
+`
 
 const FooterCopyright = () => {
   return (
@@ -34,10 +50,18 @@ const FooterCopyright = () => {
       <FooterSection>
         <CopyrightText>Copyright Listify Classic © 2020. All Rights Reserved</CopyrightText>
         <SocialIconsWrapper>
-          <ion-icon name='logo-facebook-outline'></ion-icon>
-          <Icon>Twitter</Icon>
-          <Icon>Instagram</Icon>
-          <Icon>Google Plus</Icon>
+          <StyledLink to='#'>
+            <ion-icon title='Facebook' name='logo-facebook'></ion-icon>
+          </StyledLink>
+          <StyledLink to='#'>
+            <ion-icon title='Twitter' name='logo-twitter'></ion-icon>
+          </StyledLink>
+          <StyledLink to='#'>
+            <ion-icon title='Instagram' name='logo-instagram'></ion-icon>
+          </StyledLink>
+          <StyledLink to='#'>
+            <ion-icon title='Google Plus' name='logo-google'></ion-icon>
+          </StyledLink>
         </SocialIconsWrapper>
       </FooterSection>
     </CopyrightFooterWrapper>
