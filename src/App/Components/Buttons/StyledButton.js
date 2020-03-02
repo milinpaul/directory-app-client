@@ -10,7 +10,9 @@ export default styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
+  &:active,
   &:hover {
+    outline: none;
     background-color: #b40e4a;
     transform: translateY(-0.5rem);
   }
