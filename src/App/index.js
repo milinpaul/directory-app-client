@@ -1,5 +1,4 @@
 import React from 'react'
-// import { StylesProvider, MuiThemeProvider } from '@material-ui/core/styles'
 import { ThemeProvider } from 'styled-components'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
@@ -17,8 +16,6 @@ const history = createBrowserHistory()
 function App() {
   return (
     <Provider store={Store}>
-      {/* <StylesProvider injectFirst>
-        <MuiThemeProvider theme={theme}> */}
       <ThemeProvider theme={theme}>
         <Router history={history}>
           <Layout>
@@ -29,8 +26,6 @@ function App() {
           </Layout>
         </Router>
       </ThemeProvider>
-      {/* </MuiThemeProvider>
-      </StylesProvider> */}
     </Provider>
   )
 }

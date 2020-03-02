@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from './Logo'
 import NavLinks from './NavLinks'
+import MenuIcon from '../Icons/MenuIcon'
+import MobileMenu from '../MobileMenu'
 
 const Navbar = styled.nav`
   width: 100%;
@@ -25,7 +27,9 @@ const Index = () => {
       <WrapperContainer>
         <Logo />
         <NavLinks />
+        <MenuIcon />
       </WrapperContainer>
+      <MobileMenu />
     </Navbar>
   )
 }
